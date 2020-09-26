@@ -1,0 +1,22 @@
+.container-login
+{
+	padding:2rem;
+	box-sizing: border-box;
+	margin: auto 35vw;
+}
+.buttons
+{
+	text-align: center;
+}
+.buttons button
+{
+	margin: 10px;
+	width: 200px;
+}
+@media(max-width: 1024px)
+{
+	.container-login
+{
+	margin: auto 5vw;
+}	
+}
