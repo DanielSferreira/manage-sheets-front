@@ -1,0 +1,39 @@
+.login {
+    box-sizing: content-box;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.input-login {
+    padding: 1%;
+    width: 98%;
+    margin-top: 1rem;
+}
+
+.item-login {
+    padding: 0.4rem 0;
+    margin: 8rem 2rem;
+}
+.input-group-buttom {
+    margin: 1rem 0;
+    text-align: center;
+}
+.input-group-buttom Button{
+    width: 9rem;
+    height: 3rem;
+    text-align: center;
+}
+/* Effects */
+.input-login:focus {
+    padding: 1.5% 1%;
+    width: 98%;
+    margin-top: 1rem;
+}
+@media(max-width: 1000px)
+{
+}
+@media(min-width: 1000px)
+{
+    
+}
