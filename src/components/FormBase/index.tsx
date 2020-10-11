@@ -1,21 +1,31 @@
 import * as React from "react";
-import { Layout, Row, Col, Typography, Input } from "antd";
-import { BookOutlined,ControlOutlined } from '@ant-design/icons';
-// import './menu.css';
-import { Link } from "react-router-dom";
+import { Typography, Input } from "antd";
+import { Form } from "../../Interfaces/Form";
+import "./css.css";
 const { Title } = Typography;
+type Props = {
+  form: Form[];
+  title: string;
+}
+export const FormBase = ({form,title}: Props) => {
 
-export const FormBase = () => {
     return (
-        <Layout>
-  				<Title level={2}>Login</Title>
-          <Row gutter={[8, 8]}>
-            <Col span={8}>
-    				<Input className="input-login" placeholder="Usuario" />
-
-            </Col>
-            <Col span={8}></Col>
-          </Row>
-        </Layout >
+        <React.Fragment>
+        <Title level={3} >{title}</Title>
+        {
+        Object.values(form).map((item:any,key) => {
+          return(
+            <div className="form-item" key={key} style={item.style}>
+            <span className="form-item-label">{item.label}</span>
+              <Input
+                required
+                type={item.ipType}
+                name={item.name}
+              />
+            </div>
+          )
+          })
+        }
+        </React.Fragment>
     );
 }
