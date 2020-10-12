@@ -27,6 +27,10 @@ export const input = {
     background:"white",
     border: "solid 1px #ccc"
   },
+  add: {
+    width: "90%",
+    margin:"2% 5%"
+  },
   error:{
     display:"block",
     padding: "10px",
